@@ -610,6 +610,9 @@ static int dummylsm_file_receive(struct file *file)
 
 static int dummylsm_file_open(struct file *file)
 {
+    /* TODO Control File Access */
+    /* use file->d_entry to get the dentry and then check the
+     * filename/path/stat and enforce policy */
 	return 0;
 }
 
