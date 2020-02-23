@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config SECURITY_DUMMYLSM
+	bool "Dummy LSM Support"
+	depends on SECURITY
+	default n
+	help
+	  This selects Dummy LSM.
+           see blog.rjed.org for more details
+
